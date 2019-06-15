@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 $success: #c7f282;
 $warning: #f1e681;
 $error: #f08181;
@@ -30,24 +32,24 @@ $charcoal: #ccc;
 }
 
 .auth-form {
+  background-color: yellow;
   display: flex;
+  font-family: 'Permanent Marker', cursive;
   flex-direction: column;
   justify-content: center;
   margin: 15% auto 0;
   max-width: 600px;
+  text-align: center;
 
   h3,
   input {
     margin-bottom: 5%;
   }
 
-  button {
-    align-self: flex-end;
-    max-width: 200px;
-  }
 }
 
 body {
   background-image: url('./pics/woods.jpg');
   background-size: cover;
+  font-family: 'Permanent Marker', cursive;
 }
