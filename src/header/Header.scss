@@ -1,4 +1,7 @@
 $charcoal: #bbb;
+$lightyellow: #ffffe0;
+$black: #000;
+$lavender: #e6e6fa;
 
 .main-header {
   align-items: center;
@@ -21,9 +24,13 @@ $charcoal: #bbb;
   justify-content: flex-end;
 }
 
-.cToDo {
-  background-color: yellow;
-  color: black;
+.c-to-do {
+  background-color: $lightyellow;
+  color: $black;
+}
+
+.items {
+  background-color: $lavender;
 }
 
 @media (max-width: 600px) {

@@ -4,6 +4,9 @@ $success: #c7f282;
 $warning: #f1e681;
 $error: #f08181;
 $charcoal: #ccc;
+$lightyellow: #ffffe0;
+$lightgreen: #90ee90;
+$lightcyan: #e0ffff;
 
 .flash-success,
 .flash-warning,
@@ -32,7 +35,7 @@ $charcoal: #ccc;
 }
 
 .auth-form {
-  background-color: yellow;
+  background-color: $lightyellow;
   display: flex;
   flex-direction: column;
   font-family: 'Permanent Marker', cursive;
@@ -48,13 +51,13 @@ $charcoal: #ccc;
 }
 
 .form {
-  background-color: lightblue;
+  background-color: $lightcyan;
   margin-top: 20px;
   text-align: center;
 }
 
 .updated {
-  background-color: lightgreen;
+  background-color: $lightgreen;
   margin-top: 20px;
   text-align: center;
 }
