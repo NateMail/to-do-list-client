@@ -63,7 +63,7 @@ class ItemEdit extends Component {
     }
 
     return (
-      <Form className="form" onSubmit={this.handleSubmit}>
+      <Form className="form updated" onSubmit={this.handleSubmit}>
         <h2>Update To-Do</h2>
         <Form.Group controlId="toDoTitle">
           <Form.Label>To-Do Title</Form.Label>

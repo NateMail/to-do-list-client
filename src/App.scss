@@ -34,8 +34,8 @@ $charcoal: #ccc;
 .auth-form {
   background-color: yellow;
   display: flex;
-  font-family: 'Permanent Marker', cursive;
   flex-direction: column;
+  font-family: 'Permanent Marker', cursive;
   justify-content: center;
   margin: 15% auto 0;
   max-width: 600px;
@@ -45,7 +45,18 @@ $charcoal: #ccc;
   input {
     margin-bottom: 5%;
   }
+}
 
+.form {
+  background-color: lightblue;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.updated {
+  background-color: lightgreen;
+  margin-top: 20px;
+  text-align: center;
 }
 
 body {
