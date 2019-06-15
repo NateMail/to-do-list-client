@@ -73,7 +73,7 @@ class ItemEdit extends Component {
             name="title"
             required
             onChange={this.handleChange}
-            placeholder={this.title}
+            placeholder="Update Title"
           />
         </Form.Group>
         <Form.Group controlId="toDoDescription">
@@ -83,7 +83,7 @@ class ItemEdit extends Component {
             value={this.description}
             name="description"
             required
-            placeholder={this.description}
+            placeholder="Update Description"
             onChange={this.handleChange}
           />
         </Form.Group>

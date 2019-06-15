@@ -47,29 +47,29 @@ class Items extends Component {
   render () {
     const item = this.state.items.map(item => (
       <Card key={item.id}>
-        <Card.Body>  {item.title} </Card.Body>
-        <Card.Body> {item.description} </Card.Body>
-        <Button
-          variant="danger"
-          type="button"
-          className="m-1"
-          size="lg"
-          onClick={() => this.handleDelete(item.id)}
-          block
-        >
-        Delete
-        </Button>
-        <Link to={`/items/${item.id}`} >
+        <Card.Body>
+          <Card.Title>  {item.title} </Card.Title>
+          <Card.Text> {item.description} </Card.Text>
           <Button
-            variant="info"
-            size="lg"
+            variant="danger"
             type="button"
             className="m-1"
-            block
+            size="sm"
+            onClick={() => this.handleDelete(item.id)}
           >
-        Update
+          Delete
           </Button>
-        </Link>
+          <Link to={`/items/${item.id}`} >
+            <Button
+              variant="info"
+              size="sm"
+              type="button"
+              className="m-1"
+            >
+          Update
+            </Button>
+          </Link>
+        </Card.Body>
       </Card>
     ))
 
@@ -85,21 +85,13 @@ class Items extends Component {
 
     if (deleted) {
       return <Redirect to={
-        { pathname: '/items', state: { msg: 'To-Do Successfully deleted!' } }
+        { pathname: '/', state: { msg: 'To-Do Successfully deleted!' } }
       } />
     }
     return (
       <div>
         <h3>Everything you need To-Do</h3>
         <ul>{item}</ul>
-        <Link to={'/items'} >
-          <Button
-            variant="dark"
-            type="button"
-            className="m-1"
-          > Back
-          </Button>
-        </Link>
       </div>
     )
   }
