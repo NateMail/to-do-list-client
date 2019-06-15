@@ -1,6 +1,6 @@
 {
   "name": "to-do-list",
-  "homepage": "https://<USERNAME>.github.io/<REPO NAME>",
+  "homepage": "https://NateMail.github.io/to-do-list-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
