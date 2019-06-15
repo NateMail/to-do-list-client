@@ -21,6 +21,11 @@ $charcoal: #bbb;
   justify-content: flex-end;
 }
 
+.cToDo {
+  background-color: yellow;
+  color: black;
+}
+
 @media (max-width: 600px) {
   .main-header {
     flex-direction: column;
