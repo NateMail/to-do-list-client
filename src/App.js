@@ -8,6 +8,7 @@ import SignUp from './auth/components/SignUp'
 import SignIn from './auth/components/SignIn'
 import SignOut from './auth/components/SignOut'
 import ChangePassword from './auth/components/ChangePassword'
+import ItemCreate from './components/ItemCreate'
 
 import Alert from 'react-bootstrap/Alert'
 
@@ -54,6 +55,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/create-items' render={() => (
+            <ItemCreate alert={this.alert} user={user} />
           )} />
         </main>
       </React.Fragment>
