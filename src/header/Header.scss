@@ -2,10 +2,13 @@ $charcoal: #bbb;
 $lightyellow: #ffffe0;
 $black: #000;
 $lavender: #e6e6fa;
+$lightgreen: #90ee90;
+$lightcyan: #e0ffff;
 
 .main-header {
   align-items: center;
   border-bottom: 1px solid $charcoal;
+  color: $black;
   display: flex;
   height: 100px;
   padding: 0 20px;
@@ -31,6 +34,18 @@ $lavender: #e6e6fa;
 
 .items {
   background-color: $lavender;
+}
+
+.head-link {
+  color: $black;
+}
+
+.up, .ch {
+  background-color: $lightgreen;
+}
+
+.in, .out {
+  background-color: $lightcyan;
 }
 
 @media (max-width: 600px) {
